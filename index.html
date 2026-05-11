@@ -35,7 +35,8 @@
             border: 1px solid rgba(255, 255, 255, 0.1);
             position: relative;
             overflow: hidden;
-            height: 380px; 
+            /* גובה מעודכן כדי להכיל את השאלה האמריקאית */
+            height: 560px; 
         }
         
         iframe {
@@ -44,6 +45,11 @@
             width: 100% !important;
             height: 100% !important;
             border: none;
+        }
+
+        /* העלמת כוכבית חובה מהטופס */
+        iframe[data-tally-src] .tally-field-label-required {
+            display: none !important;
         }
 
         .security-note {
@@ -83,7 +89,7 @@
         @media (max-width: 600px) {
             h1 { font-size: 1.9rem; }
             .logo { font-size: 1.8rem; }
-            .tally-wrapper { height: 350px; }
+            .tally-wrapper { height: 530px; } /* התאמה לנייד */
             .security-note { font-size: 0.8rem; width: 90%; }
         }
     </style>
@@ -96,7 +102,7 @@
         <p class="subtitle">אנחנו בגרסת בטא סגורה. הצטרפו לרשימת ההמתנה כדי להפוך סריקות לקבצי Word ולייצר סיכומי מנהלים בשניות.</p>
         
         <div class="tally-wrapper">
-            <iframe data-tally-src="https://tally.so/embed/BzAbo5?alignLeft=0&hideTitle=0&transparentBackground=1&dynamicHeight=1&v=final_secure" 
+            <iframe data-tally-src="https://tally.so/embed/BzAbo5?alignLeft=0&hideTitle=0&transparentBackground=1&dynamicHeight=1&v=survey_update" 
                     frameborder="0" title="Registration"></iframe>
         </div>
 

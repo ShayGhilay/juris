@@ -1,109 +1,20 @@
-<!DOCTYPE html>
-<html lang="he" dir="rtl">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>Jurisummarizer - AI למשרדי עורכי דין</title>
-    <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@400;700&display=swap" rel="stylesheet">
-    <style>
-        * { box-sizing: border-box; }
-        body { 
-            font-family: 'Assistant', sans-serif; 
-            background-color: #0f172a; 
-            color: #f1f5f9; 
-            margin: 0; padding: 0; 
-            direction: rtl; 
-            overflow-x: hidden;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-        header { padding: 2rem 1.5rem 1rem 1.5rem; width: 100%; text-align: center; }
-        .logo { font-size: 2.2rem; font-weight: 700; color: #38bdf8; text-decoration: none; }
-        
-        .hero { width: 100%; max-width: 600px; padding: 1.5rem; text-align: center; }
-        h1 { font-size: 2.2rem; margin-bottom: 1rem; line-height: 1.2; }
-        h1 span { color: #38bdf8; }
-        p.subtitle { color: #94a3b8; font-size: 1.1rem; line-height: 1.5; margin-bottom: 2rem; }
+<div class="security-note">
+    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="vertical-align: middle; margin-left: 5px;"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+    המידע שלך מאובטח ומוגן בתקני הפרטיות המחמירים ביותר.
+</div>
 
-        .tally-wrapper {
-            width: 100%;
-            max-width: 450px;
-            margin: 0 auto 3rem auto;
-            background: rgba(255, 255, 255, 0.03);
-            border-radius: 20px;
-            border: 1px solid rgba(255, 255, 255, 0.1);
-            position: relative;
-            overflow: hidden;
-            height: 380px; 
-        }
-        
-        iframe {
-            position: absolute;
-            top: 0; left: 0;
-            width: 100% !important;
-            height: 100% !important;
-            border: none;
-        }
-
-        .features { 
-            display: grid; 
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); 
-            gap: 1.5rem; 
-            padding: 0 1.5rem 4rem 1.5rem; 
-            max-width: 1000px; 
-            width: 100%;
-        }
-        .feature-card { 
-            background: #1e293b; 
-            padding: 1.5rem; 
-            border-radius: 16px; 
-            border: 1px solid rgba(255, 255, 255, 0.05); 
-            text-align: center;
-        }
-        .feature-card h3 { color: #38bdf8; font-size: 1.3rem; margin-bottom: 0.8rem; margin-top: 0; }
-        .feature-card p { font-size: 1rem; line-height: 1.6; color: #cbd5e1; margin: 0; }
-        
-        footer { padding: 2rem; width: 100%; text-align: center; font-size: 0.85rem; color: #64748b; border-top: 1px solid rgba(255, 255, 255, 0.05); }
-
-        @media (max-width: 600px) {
-            h1 { font-size: 1.8rem; }
-            .logo { font-size: 1.8rem; }
-            .tally-wrapper { height: 350px; }
-        }
-    </style>
-</head>
-<body>
-    <header><div class="logo">Jurisummarizer</div></header>
-    
-    <section class="hero">
-        <h1>ה-AI שקורא <span>פרוטוקולים</span> במקומך</h1>
-        <p class="subtitle">אנחנו בגרסת בטא סגורה. הצטרפו לרשימת ההמתנה כדי להפוך סריקות לקבצי Word ולייצר סיכומי מנהלים בשניות.</p>
-        
-        <div class="tally-wrapper">
-            <iframe data-tally-src="https://tally.so/embed/BzAbo5?alignLeft=0&hideTitle=0&transparentBackground=1&dynamicHeight=1&v=final_v3" 
-                    frameborder="0" title="Registration"></iframe>
-        </div>
-    </section>
-
-    <section class="features">
-        <div class="feature-card">
-            <h3>OCR משפטי מתקדם</h3>
-            <p>המרה מדויקת של סריקות וצילומים למסמכי Word עריכים, עם תמיכה מלאה בעברית.</p>
-        </div>
-        
-        <div class="feature-card">
-            <h3>ניתוח תיק חכם</h3>
-            <p>זיהוי אוטומטי של עיקרי טיעונים, לוחות זמנים ונקודות מפתח מתוך מאות עמודי פרוטוקול.</p>
-        </div>
-
-        <div class="feature-card">
-            <h3>חיסכון בזמן עבודה</h3>
-            <p>קיצור זמן ניתוח התיק בעד 80%, מה שמאפשר לכם להתמקד באסטרטגיה המשפטית במקום בניירת.</p>
-        </div>
-    </section>
-
-    <script async src="https://tally.so/widgets/embed.js"></script>
-    <footer>&copy; 2026 Jurisummarizer AI</footer>
-</body>
-</html>
+<style>
+/* הוסף את העיצוב הזה בתוך ה-style */
+.security-note {
+    font-size: 0.85rem;
+    color: #94a3b8;
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(56, 189, 248, 0.05);
+    padding: 8px 15px;
+    border-radius: 20px;
+    border: 1px solid rgba(56, 189, 248, 0.1);
+}
+</style>
